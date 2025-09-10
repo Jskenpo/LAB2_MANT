@@ -18,9 +18,8 @@ def count_vowels(s: str) -> int:
 
 def is_palindrome(s: str) -> bool:
     s = _ensure_str(s, "s")
-    # normalizar: quitar espacios y puntuación simple, ignorar mayúsculas
-    normalized = re.sub(r"[^A-Za-z0-9]", "", s).lower()
-    return normalized == normalized[::-1]
+    cleaned = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
+    return cleaned == cleaned[::-1]
 
 def to_upper(s: str) -> str:
     s = _ensure_str(s, "s")
