@@ -24,7 +24,7 @@ def is_palindrome(s: str) -> bool:
 
 def to_upper(s: str) -> str:
     s = _ensure_str(s, "s")
-    return s.upper()
+    return s
 
 def concat(a: str, b: str) -> str:
     a = _ensure_str(a, "a")
