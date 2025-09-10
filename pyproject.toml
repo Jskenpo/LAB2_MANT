@@ -1,0 +1,9 @@
+[project]
+name = "textlib"
+version = "0.1.0"
+description = "Pequeña librería de manipulación de texto para laboratorio de CI"
+authors = [{name="Jose", email="example@example.com"}]
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+addopts = "-q"
