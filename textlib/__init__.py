@@ -14,7 +14,7 @@ def reverse(s: str) -> str:
 
 def count_vowels(s: str) -> int:
     s = _ensure_str(s, "s")
-    return 1
+    return sum(1 for ch in s if ch in _VOWELS)
 
 def is_palindrome(s: str) -> bool:
     s = _ensure_str(s, "s")
